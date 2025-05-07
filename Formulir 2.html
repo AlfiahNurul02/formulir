@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Relawan</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}</style></head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran Relawan</h2>
+        <form id="volunteerForm">
+            <!-- Informasi Pribadi -->
+            <h3>Informasi Pribadi</h3>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" required>
+            
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" required>
+            
+            <label>Jenis Kelamin:</label>
+            <select name="jenis_kelamin">
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+            
+            <label>Alamat:</label>
+            <input type="text" name="alamat" required>
+            
+            <label>Nomor Telepon:</label>
+            <input type="tel" name="telepon" required>
+            
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <!-- Informasi Pendidikan & Pekerjaan -->
+            <h3>Informasi Pendidikan &amp; Pekerjaan</h3>
+            <label>Pendidikan Terakhir:</label>
+            <select name="pendidikan">
+                <option value="SMA">SMA</option>
+                <option value="D3">D3</option>
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+            </select>
+
+            <label>Pekerjaan Saat Ini:</label>
+            <input type="text" name="pekerjaan" required>
+
+            <label>Keahlian &amp; Kompetensi:</label>
+            <input type="text" name="keahlian" placeholder="Public speaking, desain, dll." required>
+
+            <!-- Pengalaman & Motivasi -->
+            <h3>Pengalaman &amp; Motivasi</h3>
+            <label>Pernah Menjadi Volunteer?</label>
+            <select name="pengalaman">
+                <option value="Tidak">Tidak</option>
+                <option value="Ya">Ya</option>
+            </select>
+            <textarea name="detail_pengalaman" placeholder="Jika Ya, jelaskan pengalaman Anda"></textarea>
+
+            <label>Motivasi Bergabung:</label>
+            <textarea name="motivasi" required></textarea>
+
+            <label>Bidang yang Diminati:</label>
+            <input type="text" name="bidang" placeholder="Edukasi, Sosial, Kesehatan, dll." required>
+
+            <!-- Ketersediaan Waktu & Lokasi -->
+            <h3>Ketersediaan Waktu &amp; Lokasi</h3>
+            <label>Bersedia Volunteer di Kota Mana?</label>
+            <input type="text" name="kota" required>
+
+            <label>Waktu yang Bisa Disediakan:</label>
+            <select name="waktu">
+                <option value="Weekend">Weekend</option>
+                <option value="Weekday">Weekday</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+            </select>
+
+            <!-- Persetujuan & Upload Dokumen -->
+            <h3>Persetujuan &amp; Upload Dokumen</h3>
+            <label>Upload CV atau Surat Motivasi (Opsional):</label>
+            <input type="file" name="cv">
+
+            <label>Upload Foto atau KTP (Jika diperlukan):</label>
+            <input type="file" name="foto">
+
+            <label>
+                <input type="checkbox" name="persetujuan" required>
+                Saya menyetujui syarat &amp; ketentuan.
+            </label>
+
+            <button type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}</script></body></html>
